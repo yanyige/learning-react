@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+    <title>Components</title>
+    <style>
+        .xixi{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="example" class="Component"></div>
+    <script type="text/babel">
+      let Component = React.createClass({
+          render: function() {
+              return <h1>Hello {this.props.name} {this.props.className}</h1>;
+          } 
+      });
+      ReactDOM.render(
+          <Component name="yyg" className="xixi"/>,
+          document.getElementsByClassName('Component')[0]
+      )
+
+      
+    </script>
+  </body>
+</html>
