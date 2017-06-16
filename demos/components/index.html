@@ -19,11 +19,11 @@
     <script type="text/babel">
       let Component = React.createClass({
           render: function() {
-              return <h1>Hello {this.props.name} {this.props.className}</h1>;
+              return <h1 className="xixi">Hello {this.props.name} {this.props.className}</h1>;
           } 
       });
       ReactDOM.render(
-          <Component name="yyg" className="xixi"/>,
+          <Component name="yyg"/>,
           document.getElementsByClassName('Component')[0]
       )
 
